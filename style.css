@@ -1,0 +1,97 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+
+.body{
+    margin-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 220%);
+}
+
+header{
+    background: #2fccff;
+    height: 300px;    
+    z-index: -3;
+}
+
+.icon{
+    width: 70px;
+    margin: 10px;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h5{
+    color: rgb(71, 71, 71);
+    font-weight: 400;
+    margin-top: 0;
+    transform: translateY(-100%);
+    margin: 10px;
+}
+
+.button{
+    padding: 15px;
+    width: 200px;
+    border-radius: 100px;
+    border-style: none;
+    background: #2fccff;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.2);
+    transition: .3s;
+}
+
+.button:hover{
+    background: #4ad2ff;
+    width: 230px;
+}
+
+.button:active {
+    background:#1baada;
+  }
+
+.welcome{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+}
+
+.title{
+    color: white;
+}
+
+html{
+    background: white;
+    overflow: hidden;
+}
+
+#bm{
+    max-width: auto;
+    top: 0;
+    transform: translateY(-50%);
+    height: fit-content;
+    margin: 0 auto;
+    position: relative;
+    z-index: -2;
+}
