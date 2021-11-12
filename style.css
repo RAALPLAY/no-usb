@@ -10,11 +10,11 @@
 }
 
 .body{
-    margin-bottom: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 220%);
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 header{
@@ -70,11 +70,12 @@ h5{
 .welcome{
     display: flex;
     align-items: center;
-    position: absolute;
-    text-align: left;
-    top: 50%;
+    position: fixed;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -200%);
+    transform: translate(-50%, 0);
+    margin: 0 auto;
+    margin-top: 150px;
 }
 
 .title{
