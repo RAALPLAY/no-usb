@@ -80,9 +80,12 @@ h5{
     color: white;
 }
 
+.download{
+    overflow: hidden;
+}
+
 html{
     background: white;
-    overflow: hidden;
 }
 
 #bm{
@@ -93,4 +96,14 @@ html{
     margin: 0 auto;
     position: relative;
     z-index: -2;
+}
+
+h1{
+    color:#1baada;
+}
+
+.parrafo{
+    text-align: left;
+    margin: 10%;
+    margin-top: -10%;
 }
