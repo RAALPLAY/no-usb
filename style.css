@@ -21,11 +21,15 @@ header{
     background: #2fccff;
     height: 300px;    
     z-index: -3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon{
     width: 70px;
     margin: 10px;
+    float: left;
 }
 
 h2{
@@ -68,16 +72,17 @@ h5{
   }
 
 .welcome{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -200%);
+    margin-top: 50px;
 }
 
 .title{
     color: white;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.welcome table{
+    margin-top: 7px;
 }
 
 .download{
