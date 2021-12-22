@@ -132,7 +132,8 @@ header{
 }
 
 .tutorial{
-    width: 400px;
+    width: 70%;
+    max-width: 400px;
     height: auto;
     margin: 30px;
     border-radius: 10px;
