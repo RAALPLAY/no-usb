@@ -119,7 +119,8 @@ header{
 }
 
 .tabbar img{
-    width: 40;
+    width: 10%;
+    max-width: 40px;
     height: auto;
     float: left;
     cursor: pointer;
