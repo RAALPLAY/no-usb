@@ -142,6 +142,16 @@ header{
     box-shadow: 0 0 0.3rem #505050;
 }
 
+.smartscreen h1{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.smartscreen p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .separator{
     background-color:#2fccff;
     color: white;
