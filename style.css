@@ -17,8 +17,77 @@
     margin-bottom: 50px;
 }
 
+.overlay{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.overlay.popup{
+    visibility: visible;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.overlay .popup .title{
+    background-color: #2fccff;
+    transform:scale(0);
+    opacity: 0;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    transition: .5s;
+}
+
+.overlay.popup .popup .title{
+    transform: scale(1);
+    opacity: 100;
+    text-align: left;
+}
+
+.overlay.popup .popup .title p{
+    padding: 15px;
+    float: left;
+}
+
+.overlay .popup .description{
+    background-color: #f8f8f8;
+    transform:scale(0);
+    opacity: 0;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    transition: .5s;
+}
+
+#description{
+    margin: 20px;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.overlay.popup .popup .description{
+    transform: scale(1);
+    opacity: 100;
+}
+
 header{
     background: #2fccff;
+}
+
+.header{
+    
     height: 40%;    
     z-index: -3;
     display: flex;
@@ -26,10 +95,69 @@ header{
     justify-content: center;
 }
 
+.tabbar{
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: -20px;
+}
+
+.tabbar a button{
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    float: right;
+    transition: 0.3s;
+}
+
+.tabbar a button:hover{
+    color: #e4e4e4;
+}
+
+.tabbar img{
+    width: 40;
+    height: auto;
+    float: left;
+    cursor: pointer;
+}
+
 .icon{
     width: 70px;
     margin: 10px;
     float: left;
+}
+
+.tutorial{
+    width: 400px;
+    height: auto;
+    margin: 30px;
+    border-radius: 10px;
+    float: none;
+    box-shadow: 0 0 0.3rem #505050;
+}
+
+.separator{
+    background-color:#2fccff;
+    color: white;
+    width: 100%;
+    padding-top: 30px;
+    height: fit-content;
+    box-shadow: 0 0 0.7rem #2fccff;
+}
+
+.separator_white{
+    width: 100%;
+    padding-top: 30px;
+    height: fit-content;
+    box-shadow: none;
+}
+
+.smartscreen{
+    margin-top: -10%;
 }
 
 h2{
@@ -110,5 +238,28 @@ h1{
 .parrafo{
     text-align: left;
     margin: 10%;
+    margin-bottom: 50px;
     margin-top: -10%;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #2fccff;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 0.7rem #2fccff;
+}
+
+footer #copyright{
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+footer #email{
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px;
 }

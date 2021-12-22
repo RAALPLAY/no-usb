@@ -13,6 +13,11 @@
 <body>
     <xml id="2" src="update.xml"></xml>
     <header>
+        <div class="tabbar">
+            <a href="policies.html"><button>POLICIES</button></a>
+            <a href="index.html"><button>DOWNLOAD</button></a>
+        </div>
+        <div class="header">
         <div class="welcome">
             <img class="icon" src="img/icon.png" alt="" srcset="">
             <table>
@@ -23,7 +28,7 @@
                     <td><h4 class="title">RAALPLAY</h4></td>
                 </tr>
             </table>
-        </div>
+        </div></div>
     </header>
     <div id="bm"> </div>
     <script src="lottie.js"></script>
@@ -31,9 +36,24 @@
     <div class="body">
         <h5>Windows 32 / 64 bits</h5>
         <a id="download">
-            <input class="button" type="button" value="DOWNLOAD">
+            <input class="button" type="button" value="DOWNLOAD" onclick="smartScreenAdvertise()">
         </a>
     </div>
+</div>
+<div class="overlay" id="ssAdvertise">
+  <div class="popup" id="popup">
+    <div class="title" id="title">
+        <p> Downloading...</p>
+        <img id="language" src="img/language/español.png" onclick="translatePopup()" width="30px" style=" float: right;margin: 10px;cursor: pointer;">
+    </div>
+    <div class="description">
+        <p id="description"> The download has started, if you have problems with
+        Microsoft SmartScreen when trying to install the application,
+        please <a href="smartscreen_error.html">click here.</a></p>
+    </div>
+  </div>
+  
+</div>
 </body>
 <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript">
 </script>
