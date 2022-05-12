@@ -1,11 +1,11 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Quicksand", sans-serif;
     text-align: center;
 }
 
@@ -22,7 +22,6 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 3;
     top: 0;
     left: 0;
     right: 0;
@@ -84,13 +83,13 @@
 }
 
 header{
-    position: relative;
-    z-index: 1;
     background: #2fccff;
 }
 
 .header{
+    
     height: 40%;    
+    z-index: -3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -173,15 +172,14 @@ header{
     margin-top: -10%;
 }
 
-h1{
+h2{
     font-weight: 400;
     font-size: 30px;
 }
 
-h2.title{
+h4{
     font-weight: 300;
     font-size: 20px;
-    letter-spacing: 2.7px;
 }
 
 h5{
@@ -192,42 +190,26 @@ h5{
     margin: 10px;
 }
 
-#download{
-    width: fit-content;
-    height: fit-content;
-}
-
 .button{
     padding: 15px;
     width: 200px;
     border-radius: 100px;
     border-style: none;
-    border: 3px solid #2fccff;
     background: #2fccff;
     color: white;
     cursor: pointer;
-    letter-spacing: 1px;
-    font-size: 13px;
-    font-weight: 600;
     box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease 0s;
-}
-
-.button:hover{
-    background: white;
-    color: #2fccff;
-    border-radius: 7px;
-    transform: translateY(-7px);
-    box-shadow: 0 0.3rem 0.7rem #2fcbff6e;
     transition: .3s;
 }
 
-.button:active {
-    background:#2fccff;
-    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.2);
-    transform: translateY(0px);
-    color: white;
+.button:hover{
+    background: #4ad2ff;
+    width: 230px;
 }
+
+.button:active {
+    background:#1baada;
+  }
 
 .welcome{
     margin-top: 20px;
@@ -253,9 +235,12 @@ html{
 
 #bm{
     max-width: auto;
+    top: 0;
+    transform: translateY(-50%);
     height: fit-content;
     margin: 0 auto;
-    margin-top: -50vh;
+    position: relative;
+    z-index: -2;
 }
 
 h1{
@@ -266,7 +251,7 @@ h1{
     text-align: left;
     margin: 10%;
     margin-bottom: 50px;
-    margin-top: 0px;
+    margin-top: -10%;
 }
 
 footer{
