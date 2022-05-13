@@ -4,7 +4,7 @@
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'json/wave.json'
+    path: '../json/wave.json'
   })
 
   animation.play();
