@@ -229,9 +229,22 @@ h5{
     justify-content: center;
 }
 
+.welcome .description .buttons{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 10px;
+    margin-top: 40px;
+}
+
 @media screen and (max-width: 900px) {
     .welcome{
         grid-template-columns: minmax(200px, 400px);
+    }
+    .welcome .description .buttons .flexible button{
+        width: auto;
+    }
+    .welcome .description .buttons .flexible span{
+        display: none;
     }
     .welcome .image{
         order: 0;
@@ -254,9 +267,9 @@ h5{
     float: left;
 }
 
-.welcome .description #download{
+.welcome .description a{
     text-decoration: none;
-    margin-top: 40px;
+    width: min-content;
 }
 
 .welcome .description span{
